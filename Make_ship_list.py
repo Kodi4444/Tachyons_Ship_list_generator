@@ -1,10 +1,14 @@
 import os
 import xlsxwriter
 
+################################### config aria ##################################################
+
 exclude_Star_Whale = True
 exclude_Unity_Guard_Cruiser = True
 exclude_Slaver_guard_ship = True
 exclude_Slaver_escort_ship = True
+
+###################################### end of config #############################################
 
 Trading_Stations = []
 Asteroid = []
@@ -107,9 +111,10 @@ print('Asteroid')
 print(Asteroid)
 print(len(Asteroid))
 
-print('Star_Whale')
-print(Star_Whale)
-print(len(Star_Whale))
+if not exclude_Star_Whale:
+    print('Star_Whale')
+    print(Star_Whale)
+    print(len(Star_Whale))
 
 print('Unity_Trader_ship')
 print(Unity_Trader_ship)
